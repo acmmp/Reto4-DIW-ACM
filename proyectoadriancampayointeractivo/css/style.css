@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	font-size: inherit;
+}
+body, html{
+	width: 100%;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+}
+html{
+	scroll-behavior: smooth;
+}
+:root{
+	--verde: #00A149;
+	--blanco: #fff;
+	--rojo: #881014;
+	--negro: #000;
+}
+/*NAVBAAR*/
+.navbar{
+	width: 100%;
+	height: 2.5rem;
+	background-color: var(--negro);
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	position: fixed;
+	z-index: 100;
+}
+.navbarP{
+	font-size: 1.5rem;
+	color: var(--blanco);
+	margin-left: 10%;
+}
+.desple{
+	border: none;
+	background-color: transparent;
+	margin-right: 10%;
+	position: relative;
+}
+.open{
+	position: relative;
+	top: 0;
+	left: 0;
+	opacity: 1;
+}
+.close{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+.navbarImg{
+	width: 2rem;
+	cursor: pointer;
+	transition: .5s ease-in;
+}
+/*DESPLEGABLE*/
+.menuDesplegable{
+	transform: translateY(-100%);
+	margin-top: 2.5rem;
+	width: 20rem;
+	height: auto;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, .7);
+	transition: .5s ease-in;
+	overflow: hidden;
+}
+.menuContenedor{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	transition: .5s ease-in;
+	transform: translateY(100%);
+}
+.menuDesplegable2{
+	transform: translateY(0);
+}
+.menuContenedor .ul{
+	padding: 2rem 0;
+}
+.menuContenedor .li{
+	width: 13rem;
+	margin-top: 1rem;
+	color: var(--blanco);
+	border-bottom: 1px solid var(--blanco);
+}
+.menuContenedor .li:hover{
+	transform: scale(1.1);
+}
+.menuContenedor .li a{
+	color: var(--blanco);
+}
+.menuContenedor .li a:hover{
+	color: var(--verde);
+}
+.lili{
+	width: 15rem;
+	display: grid;
+	grid-template-columns: .1fr 1.9fr;
+}
+.lili .imgli{
+	width: 1rem;
+	transform: translateX(-1.25rem);
+	margin-right: 1rem;
+	padding-top: 1rem;
+}
+.menuContenedor .il{
+	list-style: none;
+	transform: translateX(-2rem);
+	margin-top: 1rem;
+	border-bottom: 1px solid var(--blanco);
+}
+.menuContenedor .il:hover{
+	transform: translateX(-1.4rem) scale(1.1);
+	border-bottom: 1px solid var(--verde);
+}
+.menuContenedor .il a{
+	color: var(--blanco);
+}
+.menuContenedor .il a:hover{
+	color: var(--verde);
+}
+/*HEADER*/
+.headerConten{
+	padding-top: 2.5rem;
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/fondoportada.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right;
+	text-shadow: 1px 1px 2px var(--negro), -1px -1px 2px var(--negro);
+
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+.headerP{
+	color: var(--blanco);
+	font-size: 2.5rem;
+	margin-bottom: 2rem;
+}
+.headerBtn{
+	font-size: 1.3rem;
+	margin-bottom: 5rem;
+	border: 2px solid var(--blanco);
+	border-radius: .3rem;
+	padding: .3rem 3.2rem;
+	cursor: pointer;
+	transition: .1s ease-in;
+}
+.headerBtn a{
+	color: var(--blanco);
+}
+.headerBtn:hover{
+	transform: scale(1.1);
+}
+/*SECCION DE BIENVENIDA*/
+.bienvenidos{
+	margin-top: 5rem;
+	width: 100%;
+	height: auto;
+}
+
+.bienvenidoH1{
+	width: 100%;
+	font-size: 2.5rem;
+	color: var(--negro);
+	text-align: center;
+	padding-bottom: 2rem;
+}
+.bienvenidoP{
+	width: 80%;
+	margin: auto;
+	color: var(--negro);
+	font-size: 1rem;
+	text-align: center;
+	padding-bottom: 2rem;
+}
+.BBtn{
+	width: 80%;
+	margin: auto;
+}
+.bienvenidoContacto{
+	width: 10rem;
+	font-size: 1rem;
+	padding: .2rem .5rem;
+	background-color: var(--rojo);
+	border: 1px solid var(--rojo);
+	border-radius: .3rem;
+	margin-bottom: 2rem;
+	transition: .1s ease-in;
+	cursor: pointer;
+}
+.bienvenidoContacto a{
+	color: var(--blanco);
+}
+.bienvenidoContacto:hover{
+	transform: scale(1.1);
+}
+.bienvenidoImg{
+	width: 80%;
+	margin: auto;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.bienvenidoImg .img{
+	width: 8rem;
+	height: auto;
+	margin: .1rem 1rem;
+}
+.bienvenidoImg .imge{
+	width: 11rem;
+}
+/*SECCION DE PLATILLOS POPULARES*/
+.populares{
+	width: 100%;
+}
+
+.popularesBtn .Btn{
+	width: 7rem;
+	font-size: 1rem;
+	background-color: var(--verde);
+	color: var(--blanco);
+	padding: .3rem .8rem;
+	border: 1px solid var(--verde);
+	border-radius: .2rem;
+	margin: .5rem;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+.popularesBtn .Btn:hover{
+	transform: scale(1.1);
+}
+.platillosPopulares{
+	width: 80%;
+	margin: auto;
+
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.platillos{
+	width: 80%;
+	margin: auto;
+	margin-top: 1rem;
+	border: 1px solid var(--verde);
+	border-radius: .3rem;
+	padding: 1rem .3rem;
+}
+.platillos .img{
+	width: 100%;
+	height: 10rem;
+}
+.platillosH1{
+	width: 100%;
+	text-align: center;
+	font-size: 2rem;
+	color: var(--negro);
+	margin-top: 1rem;
+}
+.platillosP{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	font-size: .9rem;
+	color: var(--negro);
+	margin-top: 1rem;
+}
+.compra{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1rem;
+}
+.compraP{
+	font-size: 1.1rem;
+	font-weight: bold;
+	margin-left: 10%;
+}
+.intolerancias{
+	width: 2rem;
+	margin-right: 10%;
+	cursor: pointer;
+}
+.intolerancias:hover{
+	transform: scale(.9);
+}
+
+
+
+.ordenarBtn{
+	width: auto;
+}
+.ordenarBtn .Btn{
+	width: 10rem;
+	font-size: 1rem;
+	padding: .3rem 1rem;
+	background-color: var(--verde);
+	color: var(--blanco);
+	border: 1px solid var(--verde);
+	border-radius: .3rem;
+	margin-bottom: 3rem;
+	transition: .2s;
+	cursor: pointer;
+}
+.ordenarBtn .Btn:hover{
+	transform: scale(1.1);
+}
+/*SECCION SOBRE EL CHEF*/
+.chef{
+	width: 100%;
+	height: auto;
+}
+.infoChef{
+	width: 80%;
+	margin: auto;
+}
+.infoChef .h1{
+	width: 100%;
+	font-size: 1.5rem;
+	color: var(--blanco);
+	margin-top: 3rem;
+}
+.infoChef .span{
+	background-color: var(--rojo);
+	padding: .2rem 1rem;
+	border: 1px solid var(--rojo);
+	border-radius: .3rem;
+}
+.infoChef .h2{
+	margin-top: 1rem;
+	font-size: 1.1rem;
+	width: 100%;
+	text-align: left;
+}
+.infoChef .p{
+	margin-top: 1rem;
+	font-size: 1.1rem;
+	width: 100%;
+	text-align: left;
+}
+.infoChef .Btn{
+	margin: 1rem 0;
+	width: 10rem;
+	font-size: 1rem;
+	padding: .2rem 1rem;
+	background-color: var(--verde);
+	border: 1px solid var(--verde);
+	border-radius: .3rem;
+	color: var(--blanco);
+	transform: .2s ease-in;
+	cursor: pointer;
+}
+.infoChef .Btn:hover{
+	transform: scale(1.1);
+}
+.imgConten{
+	width: 80%;
+	margin: auto;
+}
+.chef .img{
+	padding-top: 3rem;
+	width: 100%;
+	height: 25rem;
+}
+
+/*FOTTER */
+footer{
+	width: 100%;
+	height: auto;
+	background-color: #222;
+	color: var(--blanco);
+	padding: 3rem 0;
+	margin-top: 3rem;
+}
+.columnas{
+	width: 80%;
+	margin: 0 auto;
+}
+.columnas .h2{
+	width: 100%;
+	text-align: center;
+	margin-top: 3rem;
+	font-size: 1.5rem;
+}
+.columnas .p{
+	width: 100%;
+	text-align: center;
+	margin-top: 1rem;
+	font-size: 1rem;
+}
+.columnas .iconos{
+	display: flex;
+	justify-content: center;
+}
+.columnas .iconos img{
+	margin: .5rem .5rem;
+	width: 2rem;
+	cursor: pointer;
+	transition: .2s;
+}
+.columnas .iconos img:hover{
+	transform: scale(1.1);
+}
+.cor{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.columnas input{
+	width: 80%;
+	margin: auto;
+	font-size: .8rem;
+	padding: .4rem 1rem;
+	border: 1px solid #222;
+	border-radius: .3rem;
+	margin-top: 1rem;	
+}
+.columnas .Btn{
+	width: 8rem;
+	font-size: 1rem;
+	background-color: var(--verde);
+	border: 1px solid var(--verde);
+	border-radius: .3rem;
+	color: var(--blanco);
+	padding: .2rem 1rem;
+	margin-top: .5rem;
+	transition: .1s ease-in;
+	cursor: pointer;
+}
+.columnas .Btn:hover{
+	transform: scale(1.1);
+}
+.boton{
+	width: 92%;
+	margin: auto;
+}
+.copy{
+	width: 100%;
+	height: 2rem;
+	font-size: 1rem;
+	background-color: var(--negro);
+	color: var(--blanco);
+	letter-spacing: .5rem;
+	text-align: center;
+	padding-top: 1rem;
+}
+.filtros {
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+	padding: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	z-index: 999;
+	justify-content: center;
+	
+}
+
+.filtros label {
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.filtros input {
+	margin-right: 5px;
+}

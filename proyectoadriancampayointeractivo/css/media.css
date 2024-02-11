@@ -1,0 +1,226 @@
+@media screen and (min-width: 400px){
+	/*header*/
+	.headerP{
+		font-size: 3.5rem;
+	}
+	.headerBtn{
+		font-size: 1.5rem;
+	}
+}
+@media screen and (min-width: 500px){
+	.footer{
+		width: 100%;
+		height: auto;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 1rem;
+	}
+}
+@media screen and (min-width: 700px){
+	/*bienvenidos*/
+
+	.bienvenidoH1{
+		font-size: 3rem;
+	}
+	.bienvenidoP{
+		font-size: 1.2rem;
+	}
+	.bienvenidoContacto{
+		font-size: 1.2rem;
+	}
+	/*platillos*/
+	
+	.platillosH1{
+		font-size: 2.1rem;
+	}
+	.platillosP{
+		font-size: 1rem;
+	}
+	.compraP{
+		font-size: 1.2rem;
+	}
+	.platillosPopulares{
+		width: 80%;
+		margin: auto;
+
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.platillos{
+		margin: 1rem 1rem;
+	}
+	
+	
+	
+	/*seccion de chef*/
+	.infoChef .h1{
+		font-size: 2rem;
+	}
+	.infoChef .h2{
+		font-size: 1.2rem;
+	}
+	.infoChef .p{
+		font-size: 1.15rem;
+	}
+	.infoChef .Btn{
+		font-size: 1.2rem;
+	}
+	
+	/*footer*/
+	.footer{
+		width: 100%;
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media screen and (min-width: 1000px){
+	/*bienvenidos*/
+	.bienvenidos{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 1rem;
+	}
+	/*chef*/
+	.chef{
+		width: 80%;
+		margin: auto;
+		height: auto;
+
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 1rem;
+	}
+	/*platillos*/
+	.platillosPopulares{
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	/*footer*/
+	.columnas .h2{
+		font-size: 1.8rem;
+	}
+	.columnas .p{
+		font-size: 1.1rem
+	}
+	.footer{
+		width: 100%;
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+@media screen and (min-width: 1400px){
+	.bienvenidos{
+		padding-top: 5rem;
+		width: 80%;
+		margin: auto;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 1rem;
+	}
+		.platillosPopulares{
+		width: 70%;
+		margin: auto;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media screen and (min-width: 1900px){
+	.navbar{
+		height: 3rem;
+	}
+	.navbarP{
+		font-size: 2.5rem;
+	}
+	/*header*/
+	.headerP{
+		font-size: 8rem;
+	}
+	.headerBtn{
+		font-size: 2.5rem;
+	}
+	/*bienvenidos*/
+	.bienvenidos{
+		padding-top: 5rem;
+		width: 70%;
+		margin: auto;
+	}
+	
+	.bienvenidoH1{
+		font-size: 4.5rem;
+	}
+	.bienvenidoP{
+		font-size: 2rem;
+	}
+	.bienvenidoContacto{
+		font-size: 2rem;
+	}
+	.bienvenidoImg .img{
+		width: 14rem;
+	}
+	/*platillos*/
+	.populares{
+		width: 95%;
+		margin: auto;
+	}
+	.popularesH1{
+		font-size: 4.5rem;
+	}
+	.popularesBtn .Btn{
+		width: 10rem;
+		font-size: 1.8rem;
+	}
+	.platillos .img{
+		height: 15rem;
+	}
+	.platillosH1{
+		font-size: 2.5rem;
+	}
+	.platillosP{
+		font-size: 1.8rem;
+	}
+	.compraP{
+		font-size: 1.8rem;
+	}
+	
+	
+	.ordenarBtn .Btn{
+		width: 15rem;
+		font-size: 1.8rem;
+	}
+	/*seccion de chef*/
+	.infoChef{
+		width: 70%;
+	}
+	.infoChef .h1{
+		font-size: 3.5rem;
+	}
+	.infoChef .h2{
+		font-size: 2rem;
+	}
+	.infoChef .p{
+		font-size: 1.8rem;
+	}
+	.infoChef .Btn{
+		width: 15rem;
+		font-size: 2rem;
+	}
+	.chef .img{
+		height: 40rem;
+	}
+	
+	/*footer*/
+	.footer{
+		width: 80%;
+		margin: auto;
+	}
+	.columnas .h2{
+		font-size: 2.5rem;
+	}
+	.columnas .p{
+		font-size: 1.6rem;
+	}
+	.columnas .iconos img{
+		width: 3.2rem;
+	}
+	.copy{
+		font-size: 1.5rem;
+	}
+}

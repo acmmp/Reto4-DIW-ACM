@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Restaurante Campayo</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<!-- navbar -->
+	<nav class="navbar">
+		<p class="navbarP">Restaurante Campayo</p>
+		<button class="desple"><img src="img/menu.png" class="navbarImg open">
+		<img src="img/close.png" class="navbarImg close"></button>
+	</nav>
+	<!-- header -->
+	<header id="header" class="header">
+		<div class="headerConten">
+			<p class="headerP">¡ Bienvenido !</p>
+			<div class="headerBtn">
+				<p><a href="#menu">Nuestro Menú</a></p>
+			</div>
+		</div>
+	</header><!-- /header -->
+<div class="menuDesplegable">
+	<div class="menuContenedor">
+		<ul class="ul">
+			<div class="lili">
+				<div><img src="img/inicioo.png" class="imgli imgI"></div>
+				<div><li class="il"><a href="#" title="">Inicio</a></li></div>
+			</div>
+			<div class="lili">
+				<div><img src="img/restaurante.png" class="imgli"></div>
+				<div><li class="il"><a href="#bienvenidos" title="">Restaurante Campayo</a></li></div>
+			</div>
+			<div class="lili">
+				<div><img src="img/menuLista.png" class="imgli"></div>
+				<div><li class="il"><a href="#menu" title="">Nuestro Menú</a></li></div>
+			</div>
+			<div class="lili">
+				<div><img src="img/cheficono.png" class="imgli"></div>
+				<div><li class="il"><a href="#chef" title="">Informacion Del Chef</a></li></div>
+			</div>
+			
+			<div class="lili">
+				<div><img src="img/ubicacion.png" class="imgli"></div>
+				<div><li class="il"><a href="#direccion">Dirección</a></li></div>
+			</div>
+		</ul>
+	</div>		
+</div>
+	<!-- SECCION DE BIENVENIDA -->
+	<section class="bienvenidos" id="bienvenidos">
+		<div>
+		<h1 class="bienvenidoH1">Retaurante Campayo</h1>
+		<p class="bienvenidoP">En nuestro rincón , te invitamos a sumergirte en una experiencia gastronómica inigualable, donde la pasión por la carne se fusiona con la excelencia en cada bocado. En Restautante Campayo, no solo celebramos los sabores robustos y jugosos de las mejores carnes, sino que también nos esforzamos por brindar un ambiente acogedor que haga de tu visita una experiencia memorable.</p>
+		<div class="BBtn"><button class="bienvenidoContacto"><a href="#xxx">Contactar</a></button></div>
+	</div>
+		<div class="bienvenidoImg">
+			<img src="img/ternera.jpg" class="img imge">
+			<img src="img/ternera1.jpg" class="img">
+			<img src="img/ternera5.jpg" class="img">
+			<img src="img/ternera2.jpg" class="img imge">
+		</div>
+	</section>
+
+
+
+	<!-- FILTRO PARA INTOLERANCIA Y ORDEN ASC Y DESCENTE -->
+	<div class="filtros">
+		<label><input type="checkbox" id="filtroVegano"> Veganos</label>
+		<label><input type="checkbox" id="filtroCeliaco"> Celiacos</label>
+		<label><input type="checkbox" id="filtroLactosa"> Intolerantes a la Lactosa</label>
+	
+		<label for="ordenar">Ordenar por precio:</label>
+		<select id="ordenar">
+			<option value="asc">Ascendente</option>
+			<option value="desc">Descendente</option>
+			
+		</select>
+
+
+		
+	</div>
+
+
+
+	<section class="populares" id="menu">
+		
+		<div class="platillosPopulares">
+			<div class="platillos">
+				<img src="img/ensalada1.jpg" class="img">
+				<h1 class="platillosH1">Ensalada Clasic</h1>
+				<p class="platillosP">Quínoa, cerezas, tomate, aceitunas, cereal, queso</p>
+				<span class="intolerance">Veganos, Lactosa</span>
+				<div class="compra">
+					
+					<p class="compraP">€20.00</p>
+					<img src="img/vacio.png" class="favorito" onclick="alternarFavorito(this)">
+
+					<img src="img/vegan.png" class="intolerancias">
+					<img src="img/lactosa.png" class="intolerancias">
+
+				</div> 
+
+			</div>
+			
+			
+	
+			<div class="platillos">
+				<img src="img/ensalada2.jpg" class="img">
+				<h1 class="platillosH1">Ensalada Cesar</h1>
+				<p class="platillosP">Quínoa, cerezas, tomate, aceitunas, cereal</p>
+				<span class="intolerance">Veganos</span>
+				<div class="compra">
+					<p class="compraP">€7.00</p>
+					<img src="img/vacio.png" class="favorito" onclick="alternarFavorito(this)">
+
+					<img src="img/vegan.png" class="intolerancias">
+				</div> 
+			</div>
+	
+			<div class="platillos">
+				<img src="img/ensalada6.jpg" class="img">
+				<h1 class="platillosH1">Ensalada Master</h1>
+				<p class="platillosP">Quínoa, cerezas, tomate, aceitunas, cereal, panecillos</p>
+				<span class="intolerance">Veganos, Lactosa</span>
+				<div class="compra">
+					<p class="compraP">€15.00</p>
+					<img src="img/vacio.png" class="favorito" onclick="alternarFavorito(this)">
+
+					<img src="img/vegan.png" class="intolerancias">
+					<img src="img/lactosa.png" class="intolerancias">
+
+				</div> 
+			</div>
+	
+			<div class="platillos">
+				<img src="img/solomillo.jpg" class="img">
+				<h1 class="platillosH1">Solomillo Ternera</h1>
+				<p class="platillosP">Sal, Pimienta , aceite, ajo , perejil</p>
+				<span class="intolerance">Celiacos</span>
+				<div class="compra">
+					<p class="compraP">€30.00</p>
+					<img src="img/vacio.png" class="favorito" onclick="alternarFavorito(this)">
+
+					<img src="img/celiaco.png" class="intolerancias">
+
+				</div> 
+			</div>
+	
+			<div class="platillos">
+				<img src="img/presa.jpg" class="img">
+				<h1 class="platillosH1">Presa iberica</h1>
+				<p class="platillosP">Sal, Pimienta , aceite, ajo , perejil</p>
+				<span class="intolerance"></span>
+				<div class="compra">
+					<p class="compraP">€35.00</p>
+					<img src="img/vacio.png" class="favorito" onclick="alternarFavorito(this)">
+
+				</div> 
+			</div>
+	
+			<div class="platillos">
+				<img src="img/chule.jpg" class="img">
+				<h1 class="platillosH1">Chuleton buey</h1>
+				<p class="platillosP">Pimienta, Aceite oliva, Romero, Tomillo, aliolli</p>
+				<span class="intolerance">Lactosa</span>
+				<div class="compra">
+					<p class="compraP">€80.00</p>
+					<img src="img/vacio.png" class="favorito" onclick="alternarFavorito(this)">
+
+					<img src="img/lactosa.png" class="intolerancias">
+
+				</div> 
+			</div>
+	
+			<div class="platillos">
+				<img src="img/spagheti1.jpg" class="img">
+				<h1 class="platillosH1">Pasta</h1>
+				<p class="platillosP">Tomate, Queso , Perejil</p>
+				<span class="intolerance"></span>
+				<div class="compra">
+					<p class="compraP">€30.00</p>
+					<img src="img/vacio.png" class="favorito" onclick="alternarFavorito(this)">
+
+				</div> 
+			</div>
+	
+			<div class="platillos">
+				<img src="img/spaghetti2.jpg" class="img">
+				<h1 class="platillosH1">Pasta</h1>
+				<p class="platillosP">Nata , perejil</p>
+				<span class="intolerance">Lactosa</span>
+				<div class="compra">
+					<p class="compraP">€40.00</p>
+					<img src="img/vacio.png" class="favorito" onclick="alternarFavorito(this)">
+
+					<img src="img/lactosa.png" class="intolerancias">
+				</div> 
+			</div>
+	
+			<div class="platillos">
+				<img src="img/spaghetti3.jpg" class="img">
+				<h1 class="platillosH1">Pasta</h1>
+				<p class="platillosP">tomate , carne picada</p>
+				<span class="intolerance"></span>
+				<div class="compra">
+					<p class="compraP">€50.00</p>
+					<img src="img/vacio.png" class="favorito" onclick="alternarFavorito(this)">
+
+				</div> 
+			</div>
+	</div>
+	</section>
+	
+	<!-- SECCION SOBRE EL CHEF -->
+	<section class="chef" id="chef">
+		<div class="infoChef">
+			<h1 class="h1"><span class="span">Chef Adrian</span></h1>
+			<h2 class="h2">La exelencia está en la divercidad y el modo de procesar es conocer y comparar las divercidades de productos, cultura y técnicas</h2>
+			<p class="p">La creatividad sin límites de nuestro Chef se refleja en cada menú, donde la presentación impecable se combina con sabores únicos que sorprenden y deleitan. Su compromiso con la excelencia se manifiesta en la selección cuidadosa de ingredientes, desde productos locales hasta ingredientes exóticos, creando una sinfonía de sabores que eleva la experiencia gastronómica a nuevas alturas.</p>
+		</div>
+		<div class="imgConten"><img src="img/cheff.png" class="img"></div>
+	</section>
+	
+	<!-- FOOTER / PIES DE PAGINA -->
+	<footer id="direccion">
+		<div class="footer">
+			<div class="columnas">
+				<h2 class="h2 m1">Dirección</h2>
+				<p class="p">Malaga , 29006</p>
+			</div>
+			<div class="columnas">
+				<h2 class="h2 m2">Días Abiertos</h2>
+				<p class="p">Lunes a Jueves: 7:00 - 23:00</p><!-- </br> -->
+				<p class="p"> 698 854 458</p>	
+			</div>
+			<div class="columnas">
+				<h2 class="h2 m3">Finde semanas</h2>
+				<p class="p">Sabado - Domingo 8:00 - 22:00</p>
+				<div class="iconos">
+					<img src="img/facebook.png">
+					<img src="img/instagran.png">
+					<img src="img/twitter.png">
+				</div>
+			</div>
+			<div class="columnas">
+				<h2 class="h2 m4">Newsletter</h2>
+				<p class="p">Suscribete para recibir más noticias</p>
+				<div class="cor"><input type="tex" name="" placeholder="Tu correo"></div>
+				<div class="boton"><button class="Btn">Suscribirse</button></div>
+			</div>
+		</div>
+	</footer>
+	<div class="copy"> Adrian Campayo Martin</div>
+
+	<script src="javascript/menu_formulario.js"></script>
+	<script src="javascript/desplegable.js"></script>
+	<script src="javascript/filtro.js"></script>
+
+</body>
+</html>
